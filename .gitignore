@@ -1,0 +1,4 @@
+.vagrant/*
+app_ruby/*
+app_php/*
+vagrant*

@@ -1,0 +1,14 @@
+You must install Virtual Box and Vagrant 
+
+You must have NFS installed 
+
+Ubuntu: sudo apt-get install nfs-kernel-server nfs-common 
+
+Run the "vagrant up" command to boot the machines 
+
+Run the "vagrant ssh php" command - access the machine php 
+Run the "vagrant ssh ruby" command - access the ruby machine 
+
+You must clone their projects: app_ruby and app_php 
+
+To add new packages on the machines to create or edit the scripts. "Sh" they are in the scripts directory. Write scripts in Vagrantfile
