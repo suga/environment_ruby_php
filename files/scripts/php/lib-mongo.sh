@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-sudo pecl install mongo
+no '' | sudo pecl install mongo
