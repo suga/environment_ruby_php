@@ -25,7 +25,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     ruby_config.vm.synced_folder "app_ruby/", "/var/www/app", :nfs => true
 
     ruby_config.vm.provider :virtualbox do |vb|
-     vb.customize ["modifyvm", :id, "--memory", "1048"]
+     vb.customize ["modifyvm", :id, "--memory", "512"]
     end
 
     #ruby_config.vm.provision :shell, :path => "files/scripts/init.sh"
@@ -52,7 +52,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     php_config.vm.synced_folder "app_php/", "/var/www/app", :nfs => true
 
     php_config.vm.provider :virtualbox do |vb|
-     vb.customize ["modifyvm", :id, "--memory", "1048"]
+     vb.customize ["modifyvm", :id, "--memory", "512"]
     end
 
     #php_config.vm.provision :shell, :path => "files/scripts/init.sh"
@@ -63,6 +63,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     #php_config.vm.provision :shell, :path => "files/scripts/php/lib-mongo.sh"
     #php_config.vm.provision :shell, :path => "files/scripts/php/blitz.sh"
     #php_config.vm.provision :shell, :path => "files/scripts/php/nginx.sh"
+    #php_config.vm.provision :shell, :path => "files/scripts/php/phpunit.sh"
 
   end  
 
