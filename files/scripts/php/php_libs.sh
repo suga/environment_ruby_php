@@ -10,3 +10,6 @@ sudo cp /vagrant/files/php/php.ini /etc/php5/cli/
 
 sudo mv /etc/php5/fpm/php.ini /etc/php5/fpm/php.ini.old
 sudo cp /vagrant/files/php/php.ini /etc/php5/fpm/
+
+sudo mv /etc/php5/fpm/pool.d/www.conf /etc/php5/fpm/pool.d/www.conf.old
+sudo cp /vagrant/files/php/www.conf /etc/php5/fpm/pool.d/
